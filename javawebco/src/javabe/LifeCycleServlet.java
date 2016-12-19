@@ -1,0 +1,40 @@
+package javabe;
+
+import java.io.IOException;
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet(description = "lfe", urlPatterns = { "/servlet/LifeCycleServlet" })
+public class LifeCycleServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	public LifeCycleServlet() {
+		super();
+
+	}
+
+	public void init(ServletConfig config) throws ServletException {
+		System.out.println("***1、Servlet初始化-->init()");
+	}
+
+	public void destroy() {
+		System.out.println("**3、Servlet销毁-->destory()");
+	}
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		System.out.println("**2、Servlet服务-->doGet()");
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		doGet(request, response);
+	}
+
+}

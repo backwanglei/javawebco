@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>request表单显示多种类型</title>
+</head>
+<body>
+<form action="requestreceieveDemo3.jsp" method="post">
+姓名：<input type="text" name="姓名"/><br/>
+性别：<input type="radio" name="性别" value="男" checked="checked"/>男
+      <input type="radio" name="性别" value="女"/>女<br/>
+城市：<select name="居住城市">
+<option value="北京">北京</option>
+<option value="苏州">苏州</option>
+<option value="杭州">杭州</option>
+<option value="合肥">合肥</option>
+<option value="哈尔滨">哈尔滨</option>
+</select>
+<br/>
+兴趣：<input type="checkbox" name="**兴趣爱好" value="唱歌">唱歌
+<input type="checkbox" name="**兴趣爱好" value="跳舞">跳舞
+<input type="checkbox" name="**兴趣爱好" value="游泳">游泳
+<input type="checkbox" name="**兴趣爱好" value="看书">看书
+<input type="checkbox" name="**兴趣爱好" value="旅游">旅游<br/>
+自我介绍：<textarea rows="3" cols="30" name="自我介绍"></textarea><br/>
+<input type="hidden" name="编号" value="1">
+<input type="submit" value="提交">
+<input type="reset" value="重置信息">
+</form>
+</body>
+</html>
