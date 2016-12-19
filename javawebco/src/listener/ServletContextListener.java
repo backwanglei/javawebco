@@ -30,17 +30,17 @@ public final class ServletContextListener implements javax.servlet.ServletContex
      * @see ServletContextListener#contextDestroyed(ServletContextEvent)
      */
     public void contextDestroyed(ServletContextEvent arg0)  { 
-    	Date time=new Date();
+    /*	Date time=new Date();
    System.out.println(time.toLocaleString()+"ServletContextListener:监听器销毁");
-   
+   */
     }
 
 	/**
      * @see ServletContextListener#contextInitialized(ServletContextEvent)
      */
     public void contextInitialized(ServletContextEvent arg0)  { 
-    	Date time=new Date();
-    System.out.println(time.toLocaleString()+"ServletContextListener:监听器初始化");
+    /*	Date time=new Date();
+    System.out.println(time.toLocaleString()+"ServletContextListener:监听器初始化");*/
       
     }
 }

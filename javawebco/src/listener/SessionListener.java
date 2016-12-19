@@ -23,14 +23,14 @@ public final class SessionListener implements HttpSessionListener {
      * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
      */
     public void sessionCreated(HttpSessionEvent arg0)  { 
-         System.out.println("session监听器创建："+arg0.getSession().getId());
+        /* System.out.println("session监听器创建："+arg0.getSession().getId());*/
     }
 
 	/**
      * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
      */
     public void sessionDestroyed(HttpSessionEvent arg0)  { 
-    	   System.out.println("session监听器销毁"+arg0.getSession().getId());
+    	  // System.out.println("session监听器销毁"+arg0.getSession().getId());
     }
 	
 }
